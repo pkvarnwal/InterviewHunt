@@ -1,9 +1,10 @@
-package com.example.interviewhunt
+package com.example.interviewhunt.activities
 
 import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
 import androidx.appcompat.app.AppCompatActivity
+import com.example.interviewhunt.R
 
 class SplashActivity :AppCompatActivity() {
 
