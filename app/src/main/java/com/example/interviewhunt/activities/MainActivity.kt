@@ -1,4 +1,4 @@
-package com.example.interviewhunt
+package com.example.interviewhunt.activities
 
 import android.content.Intent
 import android.os.Bundle
@@ -9,7 +9,7 @@ import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
-import com.example.interviewhunt.activities.SecondActivity
+import com.example.interviewhunt.R
 import com.example.interviewhunt.model.SampleViewModel
 
 class MainActivity : AppCompatActivity(), View.OnClickListener {
