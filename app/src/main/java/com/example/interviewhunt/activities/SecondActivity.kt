@@ -14,6 +14,7 @@ class SecondActivity : AppCompatActivity() {
     lateinit var recycle : RecyclerView
     private lateinit var adapter: SecondAdapter
     val list: ArrayList<String> = ArrayList<String>()
+    val numbers: IntArray = intArrayOf(10, 20, 30, 40)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -74,4 +75,6 @@ class SecondActivity : AppCompatActivity() {
             count2 = result1
         }
     }
+
+
 }
