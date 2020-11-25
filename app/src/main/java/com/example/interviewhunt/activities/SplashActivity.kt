@@ -23,7 +23,6 @@ class SplashActivity :AppCompatActivity() {
             }
         }
 
-
         mDelayHandler = Handler()
         mDelayHandler!!.postDelayed(runnable, 3000)
 
