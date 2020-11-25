@@ -10,5 +10,4 @@ data class User(
 
 
 }
-
-
+object SomeSingleton
