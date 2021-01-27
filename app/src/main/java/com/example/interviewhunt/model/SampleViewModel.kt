@@ -6,7 +6,7 @@ import androidx.lifecycle.ViewModel
 
 class SampleViewModel : ViewModel() {
 
-    var i: Int = 0
+    var i: Int = 0 // Int variable declaration
 
     private val data: MutableLiveData<Int> = MutableLiveData<Int>()
 
