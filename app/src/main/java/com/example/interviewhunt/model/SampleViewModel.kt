@@ -7,6 +7,7 @@ import androidx.lifecycle.ViewModel
 class SampleViewModel : ViewModel() {
 
     var i: Int = 0
+
     private val data: MutableLiveData<Int> = MutableLiveData<Int>()
 
     fun add() {
