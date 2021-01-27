@@ -4,6 +4,9 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
+
+
+
 class SampleViewModel : ViewModel() {
 
     var i: Int = 0 // Int variable declaration
