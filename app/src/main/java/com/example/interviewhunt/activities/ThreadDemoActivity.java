@@ -23,6 +23,7 @@ public class ThreadDemoActivity extends AppCompatActivity {
 
         daemonThread1.setDaemon(false); //Setting User thread  t1 to daemon
         daemonThread1.start();
+        daemonThread1.addShutDownHook(daemonThread1);
 
         // Starting first 2 threads
         daemonThread2.start();
@@ -30,6 +31,7 @@ public class ThreadDemoActivity extends AppCompatActivity {
         //Setting user thread t3 to Daemon
         daemonThread3.setDaemon(true);
         daemonThread3.start();
+
     }
 }
 
@@ -46,5 +48,10 @@ class DaemonThread extends Thread {
         } else {
             System.out.println(getName() + " is User thread");
         }
+    }
+
+    public void addShutDownHook(Thread hook) {
+        Runtime r = Runtime.getRuntime();
+        r.addShutdownHook(new DaemonThread(getName()));
     }
 }
